@@ -1,0 +1,12 @@
+<h1>Failed Notifications</h1>
+<ul>
+  <% notifications.forEach(n => { %>
+    <li>
+      <%= n.message %> (User: <%= n.userId %>) - Retry Count: <%= n.retryCount %>
+      <form action="/dashboard/retry/<%= n._id %>" method="POST" style="display:inline;">
+        <button type="submit">Retry</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
+<a href="/dashboard">Back</a>
