@@ -37,8 +37,7 @@ A simple Node.js/Express notification service with email and SMS notification su
 - MONGO_URI=your_mongodb_connection_string
 - EMAIL_USER=your_email@example.com
 - EMAIL_PASS=your_email_password_or_app_password
-- SMS_API_KEY=your_sms_api_key  # if using SMS service
-- Important: Never commit .env with your secrets to version control.
+- SMS_API_KEY=your_sms_api_key
 
 4. **Run the app locally**
 - npm start
